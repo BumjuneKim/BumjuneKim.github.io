@@ -1,0 +1,62 @@
+#Architectural_style section p {
+  font-size: 0.8em; }
+
+#restful section .box {
+  position: absolute;
+  height: 30px; }
+#restful section .red {
+  border: 3px solid red; }
+#restful section .green {
+  border: 3px solid green; }
+#restful section .blue {
+  border: 3px solid blue; }
+#restful section .b1 {
+  top: 38;
+  left: 166;
+  width: 100; }
+#restful section .b2 {
+  top: 303;
+  left: 166;
+  width: 100; }
+#restful section .b3 {
+  top: 64;
+  left: 86;
+  width: 51; }
+#restful section .b4 {
+  top: 328;
+  left: 95;
+  width: 50; }
+#restful section .b5 {
+  top: 132;
+  left: 423;
+  width: 71; }
+#restful section .b6 {
+  top: 373;
+  left: 307;
+  width: 67; }
+#restful section .b7 {
+  top: 38;
+  left: 175;
+  width: 131; }
+#restful section .b8 {
+  top: 306;
+  left: 175;
+  width: 127; }
+#restful section .b9 {
+  top: 64;
+  left: 86;
+  width: 51; }
+#restful section .b10 {
+  top: 333;
+  left: 89;
+  width: 83; }
+#restful section .b11 {
+  top: 108;
+  left: 291;
+  width: 85; }
+#restful section .b12 {
+  top: 375;
+  left: 298;
+  width: 72; }
+
+/*# sourceMappingURL=2015-03-27.css.map */

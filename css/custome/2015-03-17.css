@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+body section {
+  font-size: 14px;
+  font-family: 'Jeju Gothic', serif !important; }
+  body section img {
+    border: none;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0); }
+  body section .header_detail p {
+    font-size: 0.7em;
+    margin-bottom: 10px; }
+  body section .header_detail ul {
+    text-align: left; }
+    body section .header_detail ul li {
+      text-align: left;
+      font-size: 0.8em; }
+  body section .header_detail h2 {
+    text-transform: capitalize; }
+  body section .header_detail h3 {
+    text-transform: capitalize;
+    margin: 0; }
+
+#http_struct img {
+  margin: 0px;
+  width: 700px;
+  border: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0); }
+
+#http section .box1 {
+  position: absolute;
+  width: 600px;
+  height: 50px;
+  border: 5px solid red;
+  top: 190px;
+  left: 180px; }
+#http section .box2 {
+  position: absolute;
+  width: 600px;
+  height: 50px;
+  border: 5px solid red;
+  top: 335px;
+  left: 180px; }
+#http section .box3 {
+  position: absolute;
+  width: 600px;
+  height: 50px;
+  border: 5px solid red;
+  top: 380px;
+  left: 180px; }
+
+#https section img {
+  border: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0);
+  width: 500px; }
+#https section .box {
+  position: absolute;
+  width: 600px;
+  height: 50px;
+  border: 5px solid red;
+  top: 400px;
+  left: 180px; }
+#https section .boxDesc {
+  position: absolute;
+  font-size: 0.6em;
+  top: 500px;
+  left: 147px;
+  color: black;
+  background: rgba(255, 255, 255, 0.5); }
+
+/*# sourceMappingURL=2015-03-17.css.map */

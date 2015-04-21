@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@mixin clearImg {
+  border: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0);
+}
+@mixin setFont {
+  font-family: 'Jeju Gothic', serif !important;
+}
+body {
+  section {
+    font-size: 14px;
+    @include setFont;
+    img {
+      @include clearImg;
+    }
+    .header_detail {
+      p {        
+        font-size: 0.7em;
+        margin-bottom: 10px;
+      }
+      ul{
+
+        text-align: left;
+        li{
+          text-align: left;
+          font-size: 0.8em;
+        }
+      }
+      h2{
+        text-transform: capitalize;
+      }
+      h3 {
+        text-transform: capitalize;
+        margin: 0;
+      }
+    }
+  }
+}
+#http_struct {
+  img {
+    margin: 0px;
+    width: 700px;
+    @include clearImg;
+  }
+}
+#http{
+  section{
+    .box1{
+      position: absolute;
+      width: 600px;
+      height: 50px;
+      border: 5px solid red;
+      top: 190px;
+      left: 180px;
+    }
+    .box2{
+      position: absolute;
+      width: 600px;
+      height: 50px;
+      border: 5px solid red;
+      top: 335px;
+      left: 180px;
+    }
+    .box3{
+      position: absolute;
+      width: 600px;
+      height: 50px;
+      border: 5px solid red;
+      top: 380px;
+      left: 180px;
+    }
+  }
+}
+#https {
+  section {
+      img {
+    @include clearImg;
+    width: 500px;
+    }
+    .box {
+      position: absolute;
+      width: 600px;
+      height: 50px;
+      border: 5px solid red;
+      top: 400px;
+      left: 180px;
+    }
+    .boxDesc{
+      position: absolute;
+      font-size:0.6em;      
+      top: 500px;
+      left: 147px;
+      color:black;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

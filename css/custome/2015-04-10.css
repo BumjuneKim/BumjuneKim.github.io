@@ -1,0 +1,39 @@
+.slides {
+  position: relative; }
+  .slides .box0 {
+    position: absolute;
+    border: 3px solid red;
+    top: 134px;
+    width: 162px;
+    right: 36px;
+    height: 32px; }
+  .slides .box1 {
+    position: absolute;
+    border: 3px solid red;
+    top: 190px;
+    left: 43px;
+    height: 57px;
+    width: 100px; }
+  .slides .box2 {
+    position: absolute;
+    border: 3px solid red;
+    top: 234px;
+    right: 109px;
+    height: 49px;
+    width: 108px; }
+  .slides .box3 {
+    position: absolute;
+    border: 3px solid red;
+    top: 234px;
+    right: 47px;
+    height: 49px;
+    width: 75px; }
+  .slides .box4 {
+    position: absolute;
+    border: 3px solid red;
+    top: 234px;
+    left: 47px;
+    height: 48px;
+    width: 222px; }
+
+/*# sourceMappingURL=2015-04-10.css.map */

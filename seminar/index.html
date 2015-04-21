@@ -1,0 +1,19 @@
+---
+layout: default
+title: 세미나
+description: 세미나 자료
+---
+
+<article>
+	<ul class="post-list">
+	  {% for post in site.categories.seminar %}
+	    <li data-index="{{ post.title | downcase }}">
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+	      <div><small>{{ post.date | date_to_string }}</small></div>
+	    </li>
+	  {% endfor %}
+	</ul>
+</article>
+
+
+

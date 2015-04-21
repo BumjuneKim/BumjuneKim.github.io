@@ -1,0 +1,70 @@
+@mixin boxP($top, $left, $width) {
+    top: $top;
+    left: $left;
+    width: $width
+}
+@mixin setBorder($size, $type, $color){
+		border: $size $type $color;
+}
+
+#Architectural_style {
+    section {
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
+#restful {
+    section {
+        .box {
+            position: absolute;
+            height: 30px;
+        }
+        .red {
+        	@include setBorder(3px, solid, red);
+        }
+        .green {
+        	@include setBorder(3px, solid, green);
+        }
+        .blue {            
+            @include setBorder(3px, solid, blue);
+        }
+        .b1 {
+            @include boxP(38, 166, 100);
+        }
+        .b2 {
+            @include boxP(303, 166, 100);
+        }
+        .b3 {
+            @include boxP(64, 86, 51);
+        }
+        .b4 {
+            @include boxP(328, 95, 50);
+        }
+        .b5 {
+            @include boxP(132, 423, 71);
+        }
+        .b6 {
+            @include boxP(373, 307, 67);
+        }
+        .b7 {
+            @include boxP(38, 175, 131);
+        }
+        .b8 {
+            @include boxP(306, 175, 127);
+        }
+        .b9 {
+            @include boxP(64, 86, 51);
+        }
+        .b10 {
+            @include boxP(333, 89, 83);
+        }
+        .b11 {
+            @include boxP(108, 291, 85);
+        }
+        .b12 {
+            @include boxP(375, 298, 72);
+        }
+    }
+}

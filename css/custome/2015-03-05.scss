@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@mixin clearImg {
+  border: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0);
+}
+@mixin setFont {
+  font-family: 'Jeju Gothic', serif !important;
+}
+#firstSection,#documentType, #event_capturing_example, #nodeElement {
+@include setFont;
+  img {
+    @include clearImg;
+  }
+}
