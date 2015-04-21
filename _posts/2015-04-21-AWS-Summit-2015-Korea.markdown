@@ -4,10 +4,9 @@ title:  "AWS Summit 2015 Korea"
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>GIT</title>
+    <title>AWS Summit 2015 Korea</title>
     <link rel="stylesheet" href="/css/reveal.css">
     <link rel="stylesheet" href="/css/theme/simple.css" id="theme">
-    <!--<link rel="stylesheet" href="/css/custome/2015-04-10.css">-->
     <!--[i?f lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -16,268 +15,418 @@ title:  "AWS Summit 2015 Korea"
 <div class="reveal">
     <div class="slides">
         <section>
-            <h1>GIT 명령어</h1>
+            <section>
+                <img src="/images/AWSSummit/title.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/1-1.jpg" style="border: none;height:100%">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/1-2.jpg" style="border: none;height:100%">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/1-3.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/1-4.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/1-5.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/1-6.jpg" style="border: none;height:100%">
+            </section>
         </section>
         <section>
-            <h1>KBJ GIT 기초↓ </h1>
-            <h3><a href="https://docs.google.com/presentation/d/1EGRKXnbJEiWz-1-xFPGN6kV-OYP8QVSW5gYwFRCRaTQ/edit?usp=sharing" target="_blank">link</a></h3>
-        </section>
-        <section>
+            <h2>목차</h2>
             <ol>
-                <li>bisect</li>
-                <li>diff</li>
-                <li>grep</li>
-                <li>rebase</li>
-                <li>stash</li>
-                <li>fetch</li>
-                <li>tag</li>
+                <li>Keynote</li>
+                <li>IoT - 컴퓨팅의 진화 </li>
+                <li>AWS소개</li>
+                <li>CloudFront와 Route53기반 콘텐츠 배포 전략 </li>
+                <li>AWS를 활용한 실시간 빅데이터 및 스트리밍 분석 </li>
+                <li>국민내비 김기사, AWS 하이브리드 클라우드 성공사례 </li>
+                <li>모바일 및 IoT환경을 위한 AWS클라우드 플랫폼의 진화 </li>
+                <li>EBS성능향상 및 EC2비용 최적화기법</li>
             </ol>
         </section>
         <section>
             <section>
-                <h1>bisect</h1>
+                <h1>Keynote</h1>
             </section>
             <section>
-                <h3>커밋 히스토리를 이진 탐색으로 탐색</h3>
-
+                <img src="/images/AWSSummit/2-1.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/2-3.jpg" style="border: none;">
+            </section>
+            <section>
                 <div style="text-align: left;">
                     <ul>
-                        <li style="list-style-type: none;">1. 탐색 시작하기</li>
-                        <li><strong>git bisect start</strong> : 탐색 시작</li>
-                        <br/>
-                        <li style="list-style-type: none;">2. 탐색 범위 지정하기</li>
-                        <li><strong>git bisect good [커밋]</strong> : 문제가 발생하지 않은 커밋 지정</li>
-                        <li><strong>git bisect bad [커밋]</strong> : 문제가 발생하는 커밋 지정</li>
-                        <li style="list-style-type: none; color: gray;">
-                            <small>-> git이 의심되는 커밋을 한개씩 Checkout해서 보여준다</small>
-                        </li>
-                        <br/>
-                        <li style="list-style-type: none;">2. 탐색 검증하기</li>
-                        <li><strong>git bisect good</strong> : 현재 git이 가리키는 커밋이 정상</li>
-                        <li><strong>git bisect bad</strong> : 현재 git이 가리키는 커밋이 오류</li>
-                        <li><strong>git bisect reset</strong> : 탐색을 시작하기 전으로 HEAD를 돌려놓기</li>
+                        <li style="list-style-type: none;">1. AWS현황</li>
+                        <li>Retail, B2B, Infrastructure</li>
+                        <li>2013 Q4 ~ 2014 Q4 : S3(102%), EC2(93%)</li>
+                        <li>go with partners and customers</li>
+                        <li>점점 cloud는 대안이 아닌 대세가 되어가고 있다.</li>
+                        <br /> 
+                        <li style="list-style-type: none;">2. AWS장점</li>
+                        <li>Mobility, Agility, Speed, Cost....</li>
+                        <li>이용사례 : 3D렌더링, SM엔터, 삼성전자프린터사업</li>
+                        <br /> 
+                        <li style="list-style-type: none;">3. 목표</li>
+                        <li>9년간 비지니스하여 혁명을 이뤘다</li>
+                        <li>고객지향, 개척자정신, 장기적투자</li>
                     </ul>
                 </div>
-
+            </section>
+            <section>
+                <img src="/images/AWSSummit/2-2.jpg" style="border: none;">
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>IoT - 컴퓨팅의 진화(intel)</h2>
+            </section>
+            <section>
+                <div style="text-align: left;">
+                    <ul>
+                        <li>2020년 500억개 디바이스 연결 예상</li>
+                        <li>Peer to Peer -> Things to Things </li>
+                        <li>End to End Solution 제공</li>
+                        <li>Cloud is the best solution for IoT</li>
+                        <li>Edison flatform</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/3-1.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/3-2.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/3-3.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/3-4.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/3-5.jpg" style="border: none;">
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>AWS소개</h1>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">1. AWS장점</li>
+                    <li>선 투자금 없음(가변비용)</li>
+                    <li>규모의경제(48번의 가격인하)</li>
+                    <li>탄력적인 처리용량(예측이 불필요)</li>
+                    <li>Agility - 분단위 provisioning</li>
+                    <li>비지니스에 집중</li>
+                    <li>수 분내에 글로벌 고객에게 진출가능</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">2. AWS구성(위치)</li>
+                    <li>11 Regions</li>
+                    <li>29 Availability zones - 전력, 인터넷 독립</li>
+                    <li>Region > AZ >= Datacenter</li>
+                    <li>53 Edge Location(CDN) - Seoul 2Edge</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Compute Service</h2>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">1) Amazon EC2(Elastic Compute Cloud)</li>
+                    <li>Virtual Machine - 쉽게 확장, 축소</li>
+                    <li>37개의 instance type - 동일타입내 사이즈별 구분</li>
+                    <li>되도록이면 최신에 나온 타입 사용권장</li>
+                    <li>사이즈가 2배가 되면 가격도 두배</li>
+                    <li>작은 사이즈에서 테스트 하며 적합 인스턴스 타입 탐색</li>
+                    <li>2xlarge = 2 * xlarge = 4 * large</li>
+                    <li>c4.large --> 숫자는 버전 large는 사이즈</li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/4-1.jpg" style="border: none;">
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">2) Auto Scailing</li>
+                    <li>EC2와 ELB등에서 사용할 수 있는 서비스</li>
+                    <li>수동으로도 가능</li>
+                    <li>쿠키런이 Auto Scailing을 사용한 좋은 사례(in Korea)</li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/4-2.jpg" style="border: none;">
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">3) ELB(Elastic Load Balancing)</li>
+                    <li>트래픽을 자동으로 분산 </li>
+                    <li>자동으로 용량 확장/축소(Auto Scailing)</li>
+                    <li>물리적으로 스위치가 여러개 있는것처럼 동작</li>
+                    <li>외부에 둘수도 WAS안에 둘수도 있다.</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">4) 구매옵션</li>
+                    <li>On-Demand : 시간당과금</li>
+                    <li>Reserved : 정액제(항상 켜져있는 서비스)</li>
+                    <li>Spot : 경매방식으로 저렴하게 공급</li>
+                    <li>Dedicated : 제한적인 인원만을 위한 물리적서버</li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/4-3.jpg" style="border: none;">
+            </section>
+            <section>
+                <h2>Storage</h2>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">1) S3(Simple Storage Service)</li>
+                    <li>내구성, 안정성 최고 99.999999999%</li>
+                    <li>원하는만큼 사용이가능(무제한)</li>
+                    <li>저장하는 만큼 과금</li>
+                    <li>static 리소스에 관한 매니징(webserver로 동작)</li>
+                    <li>Auto Scailing이 되어 서비스가 안되는 경우는 없다.</li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/4-4.jpg" style="border: none;">
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">2) Amazon Glacier</li>
+                    <li>백업용도의 Cold데이터 저장</li>
+                    <li>S3의 1/3 가격</li>
+                    <li>retrieval시 3~5시간 정도 걸리는 단점</li>
+                    <li>오래된 자료 또는 열람이 잘 안되는 자료 보관용도로 적합</li>
+                    <li>라이프사이클 정책 지정가능</li>
+                    <li>S3 -> 30days -> Glacier -> 1year drop</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">3) EBS(Elastic Block Store)</li>
+                    <li>EC2에 마운트된 하드디스크의 개념</li>
+                    <li>필요할때 얼마든지 system in & out가능</li>
+                    <li>EC2상태에 상관없이 독립적</li>
+                    <li>1GB ~ 16TB (per 1 Volume)</li>
+                    <li>Magnetic, General Purpose, Provisioned IOPS</li>
+                    <br />
+                    <li style="list-style-type: none;">4) Elastic File Service</li> 
+                    <li>Petabyte Scale, Beta서비스중, NAS대체할수 있다.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Database</h2>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">1) RDS(Relational Database Service)</li>
+                    <li>MySQL, Oracle, MS SQL, PostgreSQL</li>
+                    <li>Fully Managed / low admin</li>
+                    <li>라이센스 포함되어 걱정없이 사용하시라.</li>
+                    <li>자동 스냅샷(1일1회 자동생성, 35일 보관)</li>
+                    <li>스냅샷을 다른 region으로 복제 및 생성가능</li>
+                    <li>Read-replica복제 (read>write) 가까운 region으로</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">2) DynamoDB</li>
+                    <li>NoSQL</li>
+                    <li>Fully Managed / low admin</li>
+                    <li>몇 개의 클라이언트가 붙던간에 같은성능제공</li>
+                    <li>SSD기반</li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/4-5.jpg" style="border: none;">
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">3) Elastic Cache</li>
+                    <li>In-Memory Cache</li>
+                    <li>탄력적이고 안정적</li>
+                    <li>Cache층의 관리포인트 줄어듬</li>
+                    <li>Memcached or Redis</li>
+                    <li>작은용량에 잦은접근을 하는 데이터에 적합</li>
+                    <li>AirBnB 핫포인트 발생하는 경우 AEC사용</li>
+                    <li style="list-style-type: none;">4) New DB Service:Aurora</li> 
+                    <li>beta지만 곧 상용예정</li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/4-7.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/4-8.jpg" style="border: none;">
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>CloudFront,Route53기반</h3>
+                <h3>     콘텐츠배포전략       </h3>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">1. CloudFront</li>
+                    <li>AWS의 CDN서비스</li>
+                    <li>가장 가까운 서버로부터 컨텐츠 전송받기</li>
+                    <li>사용자의 경험성, 편의성 증가</li>
+                    <li>편의점이 가장 현실적인 비유</li>
+                    <li>서울에 2개 Edge존재 -> AWS의 Korea생각!</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li style="list-style-type: none;">2. Route53</li>
+                    <li>Cloud DNS웹 시스템</li>
+                    <li>GSLB서비스의 일종</li>
+                    <li>장비들의 상태, 성능 파악하여 최적경로제공</li>
+                    <li>latency, 가중치, region등으로 결정</li>
+                    <li>1억건 질의해도 한달10만원</li>
+                    <li>전송최적화, SSL적용, Signed Url, cookie등 추가기능제공</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>AWS를 활용한 실시간 빅데이터 및 스트리밍 분석 </h3>
+            </section>
+            <section>
+                <ul>
+                    <li>Batch Processing EMR(Elastic MapReduce)</li>
+                    <li>Hue -> Web Management System(system oper)</li>
+                    <li>flexible</li>
+                    <li>Easy to add and remove compute capacity on your cluster.</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>      국민내비 김기사 </h3>
+                <h3>AWS 하이브리드 클라우드 성공사례 </h3>
+            </section>
+            <section>
+                <ul>
+                    <li>Cloud dosen't matter</li>
+                    <li>1년 트래픽분석 -> 명절때 트래픽 상승</li>
+                    <li>김기사는 private환경으로 먼저 구성</li>
+                    <li>HOSTWAY에서 Hybrid제안</li>
+                    <li>Managed Service (AWS <-> 고객)</li>
+                    <li>개,꼬리 역전</li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/5-1.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/5-2.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/5-3.jpg" style="border: none;">
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>모바일 및 IoT환경을 위한</h3>
+                <h3>   AWS 플랫폼의 진화 </h3>
+            </section>
+            <section>
+                <ul>
+                    <li>서비스 큰 이슈 : 속도</li>
+                    <li>개발집중 환경 중요</li>
+                    <li>레고 조립 -> 요구사항을 정확히 파악</li>
+                    <li>AWS Kinesis(streaming), Cognito(auth)</li>
+                    <li>*AWS Lambda : Event Driven하여 개발자 코드실행</li>
+                    <li>이벤트 발생하여 사용되는 만큼만 과금</li>
+                    <li>Rules based on Automatic server : serverless</li>
+                    <li><a href="https://www.youtube.com/watch?v=e__8j7_VkYc" target="_blank">Demo</a> (AWS Lambda) </li>
+                    <li><a href="https://www.youtube.com/watch?v=F1USMK2uqOc" target="_blank">Demo</a> (AWS IoT - Arduino) </li>
+                    <li><a href="https://github.com/awslabs/aws-sdk-arduino">Github-SDK</a></li>
+                </ul>
+            </section>
+            <section>
+                <img src="/images/AWSSummit/6-1.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/6-2.jpg" style="border: none;">
             </section>
         </section>
 
         <section>
             <section>
-                <h1>diff</h1>
+                <h2>EBS성능향상 및 EC2비용 최적화기법</h2>
             </section>
             <section>
-                <h3>파일의 변동사항 확인</h3>
                 <ul>
-                    <li><strong>git diff</strong> : Working directory vs Staging Area</li>
-                    <br/>
-                    <li><strong>git diff --staged</strong> : Staging Area vs Repository</li>
-                </ul>
-            </section>
-        </section>
-
-        <section>
-            <section>
-                <h1>grep</h1>
-            </section>
-            <section>
-                <h3><strong>git grep [검색어]</strong></h3>
-                <br/>
-
-                <p> 내용에 [검색어]가 있는 파일을 찾아 보여줍니다. </p>
-            </section>
-            <section>
-                <h3><strong>git grep [옵션][검색어][브렌치명]</strong></h3>
-                <br/>
-
-                <p>
-                <ul>
-                    <li> 옵션
-                        <ul>
-                            <li> -l : list 형태로 출력(이름만)</li>
-                            <li> -c : 해당 문서에서 검색어가 사용된 횟수 출력</li>
-                            <li> -n : 해당 문서에서 검색어가 위치한 라인 넘버를 출력</li>
-                        </ul>
-                    </li>
-                    <br/>
-                    <li><span style="color:blue">검색어</span>뿐만 아니라 <span style="color:blue">정규식</span>도 가능</li>
-                    <li>브렌치명을 적어 검색 범위 지정 가능</li>
-                </ul>
-                </p>
-            </section>
-            <section>
-                <h3><strong>git log --grep [검색어]</strong></h3>
-
-                <p>로그에서 [검색어]가 있는 커밋 조회</p>
-                <br/>
-
-                <h3><strong>git log -G[검색어]</strong></h3>
-
-                <p>파일내의 [검색어]가 있는 커밋 조회</p>
-            </section>
-        </section>
-
-        <section>
-            <section>
-                <h1>rebase</h1>
-            </section>
-            <section>
-                <h4>커밋 로그를 재구성해 간결하게 바꿔줌.</h4>
-                <img src="/images/2015-04-17/rebase-step-1.gif" style="border: none;">
-            </section>
-            <section data-transition="fade">
-                <h4>커밋 로그를 재구성해 간결하게 바꿔줌.</h4>
-                <img src="/images/2015-04-17/rebase-step-2.gif" style="border: none;">
-            </section>
-            <section data-transition="fade">
-                <h4>커밋 로그를 재구성해 간결하게 바꿔줌.</h4>
-                <img src="/images/2015-04-17/rebase-step-3.gif" style="border: none;">
-            </section>
-            <section>
-                <ol>
-                    <li>두 브렌치가 나뉘기 전의 공통 커밋으로 이동</li>
-                    <li>그 커밋으로부터 현재 checkout한 커밋까지 따로 저장</li>
-                    <li>rebase할 브렌치(현재 checkout한)가 기준 브렌치가 가리키는 커밋을 가리킴</li>
-                    <li>이전에 임시로 저장해 놓았던 변경사항을 차례로 적용</li>
-                </ol>
-            </section>
-            <section>
-                <h3>merge와의 차이점</h3>
-                <ul>
-                   <li>rebase : 브렌치의 변경사항을 순서대로 다른 브랜치에 적용하면서 합침</li>
-                   <li>merge : 두 브랜치의 최종결과만을 가지고 합침</li>
+                    <li style="list-style-type: none;">1. EBS Volume type</li>
+                    <li>General Purpose, Provisioned IOPS, Magnetic</li>
+                    <li>IOPS (Input Output Per Second)</li>
+                    <li>volume limit 1TB -> 16TB (2015.3.19)</li>
+                    <li>pre-warming / RAID / queue depth조정</li>
                 </ul>
             </section>
             <section>
-                <ol>
-                    <li>rebase 할 branch 를 checkout 한다. <br/>
-                        --> $ git checkout slave
-                    </li>
-                    <br/>
-                    <li>기준이 되는 branch에 rebase 한다. <br/>
-                        --> $ git rebase master
-                    </li>
-                    <br/>
-                    <li>기준 branch 를 fast-forward한다. <br/>
-                        --> $ git checkout master <br/>
-                        --> $ git merge slave
-                    </li>
-                </ol>
+                <img src="/images/AWSSummit/7-1.jpg" style="border: none;">
             </section>
             <section>
-                <h4 style="color: red;">주의사항</h4>
-
-                <p>커밋들을 재구성하기 때문에 다수의 작업에서 피해야 한다</p>
-                <img src="/images/2015-04-17/1.png" style="border: none;">
-            </section>
-            <section data-transition="fade">
-                <h4 style="color: red;">주의사항</h4>
-
-                <p>커밋들을 재구성하기 때문에 다수의 작업에서 피해야 한다</p>
-                <img src="/images/2015-04-17/2.png" style="border: none;">
-            </section>
-            <section data-transition="fade">
-                <h4 style="color: red;">주의사항</h4>
-
-                <p>커밋들을 재구성하기 때문에 다수의 작업에서 피해야 한다</p>
-                <img src="/images/2015-04-17/3.png" style="border: none;">
-            </section>
-            <section data-transition="fade">
-                <h4 style="color: red;">주의사항</h4>
-
-                <p>커밋들을 재구성하기 때문에 다수의 작업에서 피해야 한다</p>
-                <img src="/images/2015-04-17/4.png" style="border: none;">
+                <img src="/images/AWSSummit/7-2.jpg" style="border: none;">
             </section>
             <section>
-                <ol>
-                    <li>rebase를 하려면 push 전에 하자!</li>
-                    <li>push를 한 경우라면 rebase는 피하자!</li>
-                </ol>
+                <img src="/images/AWSSummit/7-3.jpg" style="border: none;">
             </section>
             <section>
-                <h4>같은 브렌치의 커밋 간결화</h4>
-                <p>git reabse -i HEAD~n</p>
-            </section>
-        </section>
-
-        <section>
-            <section>
-                <h1>reset</h1>
-            </section>
-            <section>
-                <p>수정하기 이전을 되돌림</p>
                 <ul>
-                    <li style="list-style-type: none;">1. index 취소</li>
-                    <li>git reset -- [파일명] : 해당 파일을 unstaged</li>
-                    <li>git reset HEAD [파일명] : 위와 동일</li>
-                    <br/>
-                    <li style="list-style-type: none;">2. commit 취소</li>
-                    <li>git reset HEAD^ : 최종 커밋 취소</li>
-                    <li>git reset HEAD~2 : 마지막 2개의 커밋 취소</li>
-                    <li>git reset --hard ORIG_HEAD : 머지 커밋 취소</li>
+                    <li style="list-style-type: none;">2. AWS Cost</li>
+                    <li>cost줄이길 원한다면 아무것도 하지마라.</li>
+                    <li>규모의 경제를 만들어 선순환하자</li>
+                    <li>2006년부터 48번의 가격하락</li>
+                    <li>AWS Trusted Advisor에서 권고하는사항</li>
+                    <li>Optimization != Lower cost</li>
                 </ul>
             </section>
-        </section>
-
-        <section>
             <section>
-                <h1>stash</h1>
-            </section>
-            <section>
-                <h4>워킹 디렉토리에 unstaged 파일들을 백업하고,<br/>워킹 디렉토리를 깨끗한 상태로 만든다.</h4>
-                <br/>
-                <h5>현재 작업을 하던 도중 다른 작업을 해야할때<br/>지금 작업을 임시로 저장해서 작업한다</h5>
-            </section>
-            <section>
-                <p>git stash [명령어]: 현재 작업을 임시 저장</p>
-
-                <p>[명령어]</p>
                 <ul>
-                    <li>[list] : 임시저장된 작업들의 리스트 출력</li>
-                    <li>[pop] : 임시저장한 작업 적용</li>
-                    <li>[apply] : 임시저장한 작업 적용(list에서 삭제x)</li>
-                    <li>[drop] : 최근 임시저장된 작업 삭제</li>
-                    <li>[clear] : list를 비운기</li>
+                    <li style="list-style-type: none;">3. Cost Optimization Tip 7</li>
+                    <li>Turn off unused instances</li>
+                    <li>Use Auto Scailing(진입장벽 높지만 운영 편해짐)</li>
+                    <li>Use reserved instance(런칭 후 통계보고 결정)</li>
+                    <li>Use spot instance(최근 인스턴스 terminated 2분전 알림)</li>
+                    <li>Decide S3 class  99.999999999% -> 99.99%<br />
+                         Reduced Redundancy Storage / Glacier</li>
+                    <li>Optimize Amazon DynamoDB capacity units</li>
+                    <li>Offload your architecture</li>
                 </ul>
             </section>
-
-        </section>
-
-        <section>
             <section>
-                <h1>fetch</h1>
+                <img src="/images/AWSSummit/7-4.jpg" style="border: none;">
             </section>
             <section>
-                <h3>원격저장소에서 변경사항을 가져옴.</h3>
-                <ul>
-                    <li>git fetch [저장소이름]</li>
-                    <li style="list-style-type: none; color:gray">
-                        <small>--> fetch는 로컬 저장소에 미반영</small>
-                    </li>
-                    <br/>
-                    <li>pull : fetch + merge</li>
-                </ul>
-            </section>
-        </section>
-
-        <section>
-            <section>
-                <h1>tag</h1>
+                <img src="/images/AWSSummit/7-5.jpg" style="border: none;">
             </section>
             <section>
-                <h4>브렌치의 현재 시점에 태그명을 붙힙니다.</h4>
-                <ul>
-                    <li>git tag : 지정한 태그 목록 보기</li>
-                    <li>git tag -a [태그명] -m [메시지]: 태그 지정하기</li>
-                    <li>git tag -d [태그명] : 태그 삭제</li>
-                    <li>git show [태그명] : 명시한 태그의 내용보기</li>
-                    <li>git push origin --tags : 태그랑 함께 Push하기</li>
-                </ul>
+                <img src="/images/AWSSummit/7-6.jpg" style="border: none;">
+            </section>
+            <section>
+                <img src="/images/AWSSummit/7-7.jpg" style="border: none;">
             </section>
         </section>
 
         <section style="text-align: left;">
-            <h1>THE END</h1>
+            <h1>Thank you</h1>
         </section>
 
     </div>
