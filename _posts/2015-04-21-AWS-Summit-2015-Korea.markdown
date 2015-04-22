@@ -353,8 +353,8 @@ title:  "AWS Summit 2015 Korea"
                     <li>*AWS Lambda : Event Driven하여 개발자 코드실행</li>
                     <li>이벤트 발생하여 사용되는 만큼만 과금</li>
                     <li>Rules based on Automatic server : serverless</li>
-                    <li><a href="https://www.youtube.com/watch?v=e__8j7_VkYc" target="_blank">Demo</a> (AWS Lambda) </li>
-                    <li><a href="https://www.youtube.com/watch?v=F1USMK2uqOc" target="_blank">Demo</a> (AWS IoT - Arduino) </li>
+                    <li><a href="https://youtu.be/iz8ke9ROq0A" target="_blank">Demo</a> (AWS Lambda) </li>
+                    <li><a href="http://youtu.be/COKgKBvAjx0" target="_blank">Demo</a> (AWS IoT - Arduino) </li>
                     <li><a href="https://github.com/awslabs/aws-sdk-arduino">Github-SDK</a></li>
                 </ul>
             </section>
@@ -365,7 +365,6 @@ title:  "AWS Summit 2015 Korea"
                 <img src="/images/AWSSummit/6-2.jpg" style="border: none;">
             </section>
         </section>
-
         <section>
             <section>
                 <h2>EBS성능향상 및 EC2비용 최적화기법</h2>
@@ -424,11 +423,9 @@ title:  "AWS Summit 2015 Korea"
                 <img src="/images/AWSSummit/7-7.jpg" style="border: none;">
             </section>
         </section>
-
         <section style="text-align: left;">
             <h1>Thank you</h1>
         </section>
-
     </div>
 </div>
 <script src="/js/jquery-1.11.1.min.js"></script>
